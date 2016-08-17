@@ -1,0 +1,72 @@
+<div class="con2">
+        <div class="geduan">
+            <span>产品推介</span>
+        </div>
+        <div class="listnav">
+            <span>首页</span><b>&gt;</b><span><a href="#main">产品推介</a></span><b>&gt;</b><span><a href="#class">{{listNav.first}}</a></span><b>&gt;</b><span><a href="#list">{{listNav.second}}</a></span><b>&gt;</b><span>{{listNav.third}}</span>
+        </div>
+        <div class="overflow">
+            <div class="imgPlay">
+                <div class="imgPBig" ng-mouseenter="shadowShow=true" ng-mouseleave="shadowShow=false" ng-mousemove="showbig($event)">
+                    <img ng-repeat="p in Img.src" ng-src="{{p}}" ng-if="imgIndex == $index">
+                    <div id="shadow" ng-show="shadowShow" ng-style="{left:shadowX+'px', top:shadowY+'px'}"></div>
+                </div>
+                <ul class="imgPSmall" ng-click="changeImg($event)">
+                    <li ng-repeat="i in imgList">
+                        <img ng-src="{{i.src}}" ng-class="{true:'on'}[imgIndex == $index]" data-index="{{$index}}">
+                    </li>
+                </ul>
+            </div>
+            <div id="bigbox" ng-show="shadowShow">
+                <img ng-repeat="g in Img.srcb" ng-src="{{g}}" ng-if="imgIndex == $index" ng-style="{left:-2*shadowX+'px', top:-2*shadowY+'px'}">
+            </div>
+            <div class="testPlay">
+                <p class="testFirst">{{testList.p1}}</p>
+                <p class="testSecond">{{testList.p2}}</p>
+                <p>价格 ：<i class="testThird">{{testList.p3|currency:"￥"}}</i></p>
+                <p>毛重 ：{{testList.p4}}</p>
+                <p>库存 ：{{testList.p5}}</p>
+                <p>已售 ：{{testList.p6}}</p>
+                <p>产地 ：{{testList.p7}}</p>
+                <div class="testEight">
+                    <div class="shuliang">
+                        <div class="sl">{{count}}</div>
+                        <div class="fuhao">
+                            <div class="jia" ng-click="increase()">+</div>
+                            <div class="jian" ng-click="decrease()">-</div>
+                        </div>
+                    </div>
+                    <div class="buy">
+                        <a href="#">立即购买</a>
+                    </div>
+                </div>
+
+                <div class="testNine">
+                    <a href="#"><i></i>分享到</a>
+                </div>
+            </div>
+            <div class="farmInfo">
+                <div class="infoImg">
+                    <img src="img/nongchangxinxi.png" alt="图片无法显示"/>
+                </div>
+                <p class="infoTest1">农场基本信息</p>
+                <div class="infoTest2">
+                    <p>名称:{{infoList.p1}}</p>
+                    <p>经营范围:{{infoList.p2}}</p>
+                    <p>经营范围:{{infoList.p2}}</p>
+                    <p>联系电话:{{infoList.p3}}</p>
+                    <p>建立时间:{{infoList.p4}}</p>
+                    <p>地址:{{infoList.p5}}</p>
+                    <p>积分:{{infoList.p6}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="goodsDetail">
+            <div class="cpxq">
+                <div class="detailTest">产品详情</div>
+                <div class="detailImg">
+                    <img ng-src="{{detail.src}}">
+                </div>
+            </div>
+        </div>
+    </div>

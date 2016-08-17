@@ -1,0 +1,21 @@
+<div class="category">
+    <div class="toggle-btn" ng-click="contShow=!contShow">
+        全部产品分类
+        <i></i>
+    </div>
+    <ul class="cont" ng-show="contShow"
+        ng-mouseover="setShow($event)"
+        ng-mouseleave="setHide($event)">
+        <li ng-class="{'true':'on'}[btnIndex==$index]"
+            ng-repeat="j in nav.cont"
+            data-index="{{$index}}">
+            <img ng-src="{{j.src}}">
+            <span>{{j.name}}</span>
+        </li>
+    </ul>
+    <div class="caidan" ng-show="caidanShow"
+         ng-mouseover="setCont()"
+         ng-mouseleave="caidanShow=!caidanShow;btnIndex=-1">
+        <a href="#list" ng-repeat="i in nav.cont[btnIndex].caidan">{{i}}</a>
+    </div>
+</div>

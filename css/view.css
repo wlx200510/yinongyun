@@ -1,0 +1,497 @@
+/*商品展示部分*/
+.banner-1{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("../img/banner-1.png") no-repeat center;
+    background-size: cover;
+}
+
+.list{
+    width: 1200px;
+    height: 240px;
+    margin: 0 auto;
+}
+.flex-item{
+    width: 200px;
+    height: 200px;
+    margin:20px;
+    float: left;
+}
+
+.guanggao{
+    width: 100%;
+    height: 150px;
+    background: url("../img/guanggao.png") no-repeat center;
+    background-size: 100% 150px;
+}
+
+.guoPinTest{
+    width: 1157px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    border-bottom: 2px solid  #00a671;
+    border-left: 4px solid  #00a671;
+    text-indent: 20px;
+}
+
+.guoPinTest span{
+    font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+
+.guoPinTest .more{
+    display: inline-block;
+    float: right;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+.guopin{
+    width: 1200px;
+    margin: 10px auto;
+}
+.guopin ul{
+    display: block;
+    width: 1200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.overflow{
+    overflow: auto;
+    zoom: 1;
+}
+.guopin ul li{
+    float: left;
+    width: 200px;
+    height: 260px;
+    margin:10px 20px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}
+
+.guopin ul li p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.guopin ul li span{
+    font-size: 18px;
+    color: #00a671;
+    display: block;
+    margin-top: 8px;
+}
+
+.shuCaiTest{
+    width: 1157px;
+    height: 30px;
+    display: block;
+    line-height: 30px;
+    margin: 20px auto;
+    border-bottom: 2px solid  #00a671;
+    border-left: 4px solid  #00a671;
+    text-indent: 20px;
+}
+
+
+
+/*推介部分*/
+
+.con1, .con2{
+    width: 1200px;
+    height: auto;
+    margin:30px auto;
+}
+.geduan{
+    width: 1052px;
+    height: 43px;
+    border-bottom: 2px solid #00a671;
+    margin-left: 150px;
+}
+.geduan span{
+    display: inline-block;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    color:#333333;
+    font-weight: bold;
+}
+.listnav{
+    width: 100%;
+    height: 40px;
+}
+.listnav *{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color:#333333;
+}
+.listnav a:hover{
+    color:green;
+}
+.con1 ul{
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.con1 ul li{
+    float: left;
+    width: 200px;
+    height: 260px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    font-family: "Microsoft YaHei";
+    font-weight: normal;
+}
+
+.con1 ul li p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+.con1 ul li span{
+    font-size: 18px;
+    color: #00a671;
+    display: block;
+    margin-top: 5px;
+}
+
+.con1 .page{
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    margin:80px auto;
+    -moz-user-select:none;
+    user-select:none;
+}
+.con1 .page li{
+    float: none;
+    display: inline-block;
+    width: 30px;
+    height:30px ;
+    line-height: 30px;
+    text-align: center;
+    margin: 10px;
+    background-color: #e8e8e8;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+}
+.con1 .page li.disabled{
+    color: #bfbfbf;
+    background: #f2f2f2;
+    width: 60px;
+    cursor: not-allowed;
+}
+.con1 .page .current{
+    background-color: #e8e8e8;
+    border: 1px solid #00a671;
+    color:#00a671;
+}
+.con1 .page .prevPage,.con1 .page .nextPage{
+    width: 60px;
+}
+.con1 .page .elli{
+    width: 30px;
+    height:30px ;
+    line-height: 30px;
+    margin: 10px 0px;
+    background-color: #fff;
+    border:0;
+}
+/*信息详情部分*/
+
+
+.overflow{
+    overflow: auto;
+    zoom: 1;
+}
+.con2 .imgPlay{
+    float: left;
+
+}
+.con2 .imgPBig{
+    position: relative;
+    height: 300px;
+}
+#shadow{
+    position: absolute;
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    background-color: #fede4f;
+    opacity: 0.5;
+}
+
+.con2 .imgPBig img{
+    display: block;
+    position:absolute;
+    top:0;
+    left: 0;
+}
+.con2 .imgPSmall{
+    overflow: hidden;
+}
+.con2 .imgPSmall li{
+    float: left;
+    margin: 10px 15px 0 0;
+}
+.imgPSmall li img{
+    border:2px solid transparent;
+}
+.con2 .imgPSmall img.on{
+    border:2px solid #02a671;
+}
+.testPlay {
+    margin:15px 0 0 20px;
+    float: left;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.testPlay p{
+    height:32px;
+    line-height: 32px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #666;
+
+}
+.testPlay .testFirst{
+    font-size: 18px;
+    color: #333;
+    font-family: "SimHei";
+}
+.testPlay .testSecond{
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #f36e21;
+}
+.testPlay .testThird{
+    font-size: 24px;
+    font-weight: bold;
+    color: #00a671;
+}
+
+.testEight{
+    width: 170px;
+    height: 32px;
+    margin-top: 15px;
+}
+.shuliang{
+    float: left;
+    position: relative;
+    width: 49px;
+    height: 35px;
+    -webkit-user-select: none;
+    -moz-user-select: none;     
+    -ms-user-select: none;
+    user-select: none;  
+}
+
+.shuliang .sl{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid #8e8e8e;
+}
+
+.shuliang .fuhao{
+    position: absolute;
+    top: 0;
+    left: 32px;
+    float: right;
+    width: 15px;
+    height: 30px;
+    border-right: 1px solid #8e8e8e;
+    border-top: 1px solid #8e8e8e;
+    border-bottom: 1px solid #8e8e8e;
+}
+.shuliang .jia,.jian{
+    width: 15px;
+    height: 14px;
+    line-height: 13.5px;
+    text-align: center;
+    cursor:pointer;
+}
+.shuliang .jian{
+    border-top: 0px solid #8e8e8e;
+    position: relative;
+}
+.shuliang .jian::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background-color: #8e8e8e;
+    top:1px;
+    right: 0;
+    z-index: 9;
+}
+
+.testPlay .buy{
+    float: right;
+    width: 100px;
+    height: 30px;
+}
+.testEight .buy a{
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #00a671;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Microsoft YaHei";
+    color: #fff;
+}
+
+.testNine{
+    margin-top: 30px;
+    width: 80px;
+    height: 22px;
+    line-height: 22px;
+}
+.testNine i{
+    display: inline-block;
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: url("../img/fenxiang.png")no-repeat center;
+}
+
+.testNine a{
+    float: right;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+}
+
+/*农场基本信息部分*/
+.farmInfo{
+    margin-top: 20px;
+    float: right;
+    width: 197px;
+    border: 1px solid #c0c0c0;
+}
+
+.farmInfo .infoImg{
+    width: 195px;
+    height: 195px;
+    margin: 0 auto;
+}
+
+.infoTest1{
+    margin: 5px auto;
+    width: 100px;
+    height: 30px;
+    line-height: 36px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.infoTest2{
+    border-top: 1px solid #c0c0c0;
+    width: 185px;
+    margin:0px auto;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+}
+
+.infoTest2 p{
+    width: 185px;
+    height: 30px;
+    line-height: 30px;
+}
+
+
+/*产品详情*/
+.goodsDetail{
+    width: 1200px;
+    height: 1944px;
+    margin: 20px auto;
+}
+.goodsDetail .cpxq{
+    margin: 0 auto;
+    width: 1200px;
+    height: 50px;
+    background: url("../img/product-detail-bg.png") no-repeat center;
+}
+
+.detailTest{
+    width: 119px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    font-size: 18px;
+    font-weight: normal;
+    color: #f36e21;
+}
+
+.detailImg{
+    position: relative;
+    width: 1198px;
+    height: 1910px;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+}
+.detailImg img{
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    display: block;
+    width: 1180px;
+    height: 1890px;
+}
+
+/*补充的放大镜容器*/
+#bigbox{
+    position: absolute;
+    left: 310px;
+    top: 84px;
+    z-index: 999;
+    border:1px solid #c0c0c0;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+#bigbox img{
+    position: absolute;
+    top:0;
+    left: 0;
+}

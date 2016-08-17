@@ -1,0 +1,275 @@
+
+body{
+    background-color: #fff;
+}
+/*nav上的字体样式开始*/
+.nav .navcont{
+    width: 1200px;
+    margin:0 auto;
+    text-align: left;
+    height: 40px;
+    overflow: hidden;
+}
+.nav span{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.nav p{
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    width: 20%;
+    text-align: right;
+}
+.nav p a{
+    color: #fff;
+    font-size: 16px;
+    margin:0 4%;
+}
+/*nav上的字体样式结束*/
+.container{
+    width: 100%;
+    height: auto;
+}
+.nav{
+    width: auto;
+    height: 40px;
+    background-color: #333333;
+    margin: 0 auto;
+}
+
+.service{
+    width: 1200px;
+    height: 117px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 610px;
+    height: 117px;
+    margin-top: 18px;
+    float: left;
+}
+
+.search{
+    position: relative;
+    width: 520px;
+    height: 40px;
+    margin-top: 40px;
+    float: left;
+}
+
+.input{
+    display: inline-block;
+    width: 410px;
+    height: 38px;
+    border: 1px solid #00a671;
+    text-indent: 10px;
+}
+
+.btn{
+    position: absolute;
+    width: 80px;
+    height:40px;
+    background-color:#00a671;
+    border:none;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.wrap{
+    width: 1200px;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+}
+
+/*分类部分*/
+.category{
+    z-index: 9999;
+    position: absolute;
+    margin: 0px auto;
+
+}
+
+.toggle-btn{
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background-color: #00a671;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: bold;
+    color: #fff;
+}
+.toggle-btn i{
+    display: inline-block;
+    background: url("../img/triangle.png");
+    width: 14px;
+    height: 8px;
+}
+
+.cont{
+    width: 149px;
+    background-color: rgba(255,255,255,0.7);
+    border-right: 1px solid #aaa;
+}
+
+.cont li{
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-family: "Microsoft YaHei";
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+}
+.cont li:hover{
+    color: #00a671;
+}
+
+.cont li.on{
+    background-color: #fff;
+    border-top:1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    /*border-left: 1px solid #aaa;*/
+    border-right: 1px solid #fff;
+}
+
+.cont img{
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 30px;
+    width: 19px;
+    height: 19px;
+}
+
+.cont span{
+    vertical-align: middle;
+    margin-left: 30px;
+}
+
+.caidan{
+    position: absolute;
+    left: 150px;
+    top: 0px;
+    width: 199px;
+    height: 268px;
+    border-right: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.caidan a{
+    text-indent: 8px;
+    display: inline-block;
+    margin: 16px 8px 0 8px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.caidan a:hover{
+    color: #00a671;
+}
+
+.caidan .on{
+    display: block;
+}
+
+
+/*底部*/
+.bottom{
+    position: relative;
+    margin: 40px auto 0;
+    width: 100%;
+    height: 150px;
+    background-color: #f6f6f6;
+}
+.bottomTest{
+    width: 1100px;
+    height: 150px;
+    margin-left: 140px ;
+    overflow: hidden;
+    float: left;
+}
+.bottomTest ul {
+    margin-top: 35px;
+}
+.bottomTest ul li .xian{
+    float: left;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #00a671;
+    font-family: "Microsoft YaHei";
+    font-size: 30px;
+    font-weight: normal;
+    color: #00a671;
+}
+
+.bottomTest ul li .xianTest{
+    float: left;
+    margin: 15px;
+    font-family: "Microsoft YaHei", Verdana, Arial, Helvetica, sans-serif;
+}
+.xianTest span{
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #323232;
+}
+.bottomTest p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #8a8a8a;
+}
+.bottom .back{
+    border: 1px solid #00a671;
+    border-radius: 50%;
+    position: fixed;
+    display: inline-block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+.back img{
+    width: 45px;
+    height: 40px;
+}
+.footer{
+    width: auto;
+    height: 80px;
+    background-color: #333333;
+    margin: 0 auto;
+    text-align: center;
+}
+.footer span{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}

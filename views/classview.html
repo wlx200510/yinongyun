@@ -1,0 +1,19 @@
+<div class="con1">
+    <div class="geduan">
+        <span>产品推介</span>
+    </div>
+    <div class="listnav">
+        <span>首页</span><b>&gt;</b><span><a href="#main">产品推介</a></span><b>&gt;</b><span>{{listNav.first}}</span>
+    </div>
+    <ul>
+        <li ng-repeat="i in guwuList"
+            data-index="{{$index}}">
+            <a href="#list">
+                <img ng-src="{{i.src}}">
+                <p>{{i.p}}</p>
+                <span>{{i.span|currency:"￥"}}</span>
+            </a>
+        </li>
+    </ul>
+    <ul class="page"></ul>
+</div>
