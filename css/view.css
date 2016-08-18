@@ -340,6 +340,7 @@
 .shuliang .jian{
     border-top: 0px solid #8e8e8e;
     position: relative;
+    padding-top:2px;
 }
 .shuliang .jian::before{
     content: "";
