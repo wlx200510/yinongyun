@@ -1,12 +1,5 @@
 app.controller("main",function($scope,$http){
-        var winHeight = $(window).height();
-        $(window).scroll(function(){
-            if($(window).scrollTop()>winHeight){
-                $(".back").fadeIn(300);
-            }else{
-                $(".back").fadeOut(300);
-            }
-        });
+
         $scope.listImg = [
             {
                 src:"img/dadou.png"
