@@ -146,7 +146,7 @@
 .con1 ul{
     width: 1250px;
     margin: 0 auto;
-    overflow: hidden;
+    padding-top:8px;
 }
 
 .con1 ul li{
@@ -181,6 +181,7 @@
     margin:80px auto;
     -moz-user-select:none;
     user-select:none;
+    clear:both;
 }
 .con1 .page li{
     float: none;
