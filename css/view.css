@@ -377,6 +377,7 @@
     width: 80px;
     height: 22px;
     line-height: 22px;
+    position: relative;
 }
 .testNine i{
     display: inline-block;
@@ -496,4 +497,15 @@
     position: absolute;
     top:0;
     left: 0;
+}
+.showbtn{
+    position: absolute;
+    height: 28px;
+    width: 240px;
+    top:30px;
+    left:7px;
+}
+.showbtn a{
+    height: 28px;
+    float: left;
 }

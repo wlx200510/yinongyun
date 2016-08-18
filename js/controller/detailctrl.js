@@ -1,4 +1,5 @@
 app.controller("detail",function($scope,$http){
+    $scope.jiabutton = false;
     $scope.imgIndex = 0;
     $(window).scrollTop(0);
     //放大镜效果的mousemove触发函数
