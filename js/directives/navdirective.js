@@ -10,18 +10,21 @@ angular.module("mynav",[])
                 $scope.contShow = false;
                 $scope.caidanShow = false;
                 $scope.setShow = function(e) {
+                    $scope.contShow=true;
                     if (e.target.nodeName.toLowerCase() == 'li') {
                         $scope.btnIndex = e.target.dataset.index;
                         $scope.caidanShow = true;
                     }
                 };
                 $scope.setHide = function(e){
+                    $scope.contShow=false;
                     temp = $scope.btnIndex;
                     $scope.btnIndex = -1;
                     $scope.caidanShow = false;
                 };
 
                 $scope.setCont = function () {
+                    $scope.contShow=true;
                     $scope.btnIndex = temp;
                     $scope.caidanShow = true;
                 };
